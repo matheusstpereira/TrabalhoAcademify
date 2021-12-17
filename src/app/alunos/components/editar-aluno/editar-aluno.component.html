@@ -1,0 +1,23 @@
+<div class="container">
+  <br/>
+  <h2>Atualizar Aluno</h2>
+
+  <div class="form-group">
+    <mat-label>Matrícula</mat-label>
+    <input type="text" class="form-control" id="matricula" placeholder="Matrícula" [(ngModel)]="aluno.matricula" name="description" required="required">
+  </div>
+
+  <div class="form-group">
+    <mat-label>Nome</mat-label>
+    <input type="text" class="form-control" id="nome" placeholder="Nome" [(ngModel)]="aluno.nome" name="title" required="required">
+  </div>
+
+  <div class="form-group">
+    <mat-label>Nascimento</mat-label>
+    <input class="form-control" type="date" id="nascimento" [(ngModel)]="aluno.nascimento" name="description" required="required">
+  </div>
+
+  <hr>
+  <a class="btn btn-secondary" routerLink="/listar" routerLinkActive="active" role="button">Voltar</a>
+  <button (click)="updateAluno()" class="btn btn-primary">Atualizar</button>
+</div>
